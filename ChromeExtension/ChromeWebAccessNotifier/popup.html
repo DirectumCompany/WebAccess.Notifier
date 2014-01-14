@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html>
+<head>
+  <title>WebAccess Notifier</title>
+  <script src="jquery-1.8.2.min.js"></script>
+  <script src="popup.js"></script>
+  <script src="moment.min.js"></script>
+  <script src="lang/ru.js"></script>
+  <link rel="stylesheet" href="popup.css" type="text/css" />
+</head>
+<body>
+  <div id="extension_container">
+    <div id="content">
+      <img id="spinner" src="images/icon_64.png" /></div>
+    <footer>
+      <nav>
+        <ul>
+          <li data-type="inbox">Входящие
+            <input type="checkbox" id="unread" title="Показывать только непрочтенные" /></li>
+          <li data-type="outbox">Исходящие</li>
+          <li data-type="shortcuts">Ярлыки</li>
+          <li data-type="favorites">Избранное</li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

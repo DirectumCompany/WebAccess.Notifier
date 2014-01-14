@@ -1,0 +1,30 @@
+﻿{
+  "name": "WebAccess Notifier",
+  "version": "2.830",
+	"manifest_version": 2,
+  "description": "Быстрый доступ к папкам DIRECTUM и нотификация о входящих заданиях.",
+  "icons": {"16": "images/icon_16.png", "64": "images/icon_64.png", "256": "images/icon_256.png"},
+  "permissions": [
+		"tabs", 
+		"notifications", 
+		"cookies",          
+    "http://*/*", 
+    "https://*/*",
+    "contextMenus"],
+  "options_page": "options.html",
+  "background": { "scripts": ["jquery-1.8.2.min.js", "background.js"] },  
+  "web_accessible_resources": [
+    "images/popup/job.png",
+		"images/popup/controljob.png",
+		"images/popup/notice.png",
+		"images/popup/online.png",
+		"images/popup/icon.png",
+		"images/popup/icon_16.png",
+		"images/popup/icon_16_offline.png",
+		"images/popup/icon_256.png"
+  ],
+	"browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>Двойной хромированный бумеранг</title>
+    <link href="options.css" rel="stylesheet" type="text/css">
+    <script src="options.js"></script>
+  </head>
+  <body>
+<header id="header">
+	<h1>WebAccess Notificator</h1>
+</header>
+    <form id="options">
+      <input placeholder="Адрес веб-доступа" type="text" name="URL"/><br/>
+      <div id="theme">
+        Тема отображения:
+        <select name="theme">
+          <option value="0">Классическая</option>
+          <option value="32">Расширенная</option>
+         </select>
+      </div>
+	  <div id="notification">
+      <input type="checkbox" name="isActivated" checked>Проверять "Входящие" каждые
+          <select name="frequency">
+            <option>1</option>
+            <option>5</option>
+            <option>10</option>
+            <option>15</option>
+            <option>30</option>
+          </select>
+          минут<br/>
+		</div>
+
+      <input type="checkbox" name="isDrillDown">Открывать папки в расширении<br/>            
+      <input type="checkbox" name="isAutoLogin">Автоматическое подключение<br/>
+      <div id="credentials">
+        <input placeholder="Логин" type="text" name="login"/><br/>
+        <input placeholder="Пароль" type="password" name="password"/><br/>
+        <div style="text-align:center"><button name="check" class="blue">Проверить</button><button name="clean" class="orange">Очистить</button></div>
+      </div>
+      <div id="alert_https" style="display:none">
+        При использовании HTTPS соединения убедитесь, что есть доверие сертификату SSL-соединения.
+      </div>
+      <div id="alert_http" style="display:none">
+        В целях обеспечения безопасности, при включенной опции "Автоматическое подключение", рекомендуется использовать HTTPS соединение.
+      </div>
+    </table>                        
+    </form>
+    <footer><h1>DIRECTUM</h1></footer>
+  </body>
+</html>
