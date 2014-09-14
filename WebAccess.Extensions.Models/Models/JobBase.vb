@@ -32,7 +32,7 @@ Namespace Models
       MyBase.New(Job)
       Me.Important = (Job.Importance = CustomWork.WorkImportance.High)
       Me.IsRead = Job.IsRead
-      Me.IsSigned = Job.IsSigned
+      'Me.IsSigned = Job.IsSigned
 
 
       Me.IsStandardRouted = Job.IsStandardRouted

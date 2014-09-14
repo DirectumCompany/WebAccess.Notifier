@@ -43,7 +43,7 @@ Public Class Service
                                              SBRSE.Constants.CustomWorkRequisites.REQ_JOB_READED, "N")
 
     Log.LogInfo("Notifier: Получение новых входящих от {0} для {1}", LastUpdate.ToString(Culture.DateTimeFormat.FullDateTimePattern), WAAPIEntry.Context.CurrentUser.FullName)
-    NewJobs = WAAPIEntry.Context.Jobs.GetJobs(Expression, False).Select(Function(x) New Models.JobBase(x)).ToList()
+    NewJobs = WAAPIEntry.Context.Jobs.GetJobs(Expression).Select(Function(x) New Models.JobBase(x)).ToList()
     Return New CheckInboxResult() With {.UnreadJobCount = Inbox.UnreadJobCount, .NewJobs = NewJobs}
   End Function
 
